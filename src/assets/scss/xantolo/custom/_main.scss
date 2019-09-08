@@ -1,0 +1,38 @@
+body {
+    color: $white;
+}
+
+.navbar-light {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    .navbar-brand {
+        font-family: 'Pacifico', cursive;
+        color: #f24ba7;
+        font-size: 24px;
+        padding: 0;
+
+        img {
+            width: 27px;
+            top: -4px;
+            position: relative;
+            margin-right: 5px;
+        }
+    }
+}
+
+main {
+    position: relative;
+    margin-top: 56px;
+    width: $full-width;
+}
+
+.section {
+    padding: 30px 14px;
+}
+
+img {
+    width: 100%;
+}
+
+@import 'sections/_landing';

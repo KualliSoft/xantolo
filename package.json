@@ -1,33 +1,58 @@
 {
   "name": "xantolo",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Sitio para difundir la tradición mas importante para la region Huasteca (y sus alrededores) en México.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elMatadito/xantolo.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "xantolo"
+  ],
+  "author": "KualliSoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elMatadito/xantolo/issues"
+  },
+  "homepage": "https://github.com/elMatadito/xantolo#readme",
   "dependencies": {
+    "chart.js": "2.7.3",
+    "classnames": "2.2.6",
     "moment": "^2.24.0",
-    "react": "^16.8.6",
+    "node-sass": "4.11.0",
+    "nouislider": "13.1.1",
+    "perfect-scrollbar": "1.4.0",
+    "react": "16.8.3",
+    "react-bootstrap-switch": "15.5.3",
+    "react-chartjs-2": "2.7.4",
     "react-countdown-now": "^2.1.1",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-datetime": "2.16.3",
+    "react-dom": "16.8.3",
+    "react-ga": "^2.6.0",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.5",
+    "reactstrap": "7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/xantolo.scss src/assets/css/xantolo.css",
+    "minify-sass": "node-sass src/assets/scss/xantolo.scss src/assets/css/xantolo.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/xantolo.scss src/assets/css/xantolo.css --source-map true"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

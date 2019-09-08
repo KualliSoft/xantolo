@@ -1,0 +1,44 @@
+.footer {
+  padding: 50px 0;
+  border-top: 2px solid $primary;
+  margin-top: 17px;
+  background: radial-gradient(ellipse at bottom, #292D61 30%, $background-black 80%);
+
+  [class*="container-"] {
+    padding: 0;
+  }
+
+  .title {
+    font-family: 'Pacifico', cursive;
+    color: $primary;
+
+    img {
+      width: 50px;
+      top: -5px;
+      position: relative;
+    }
+  }
+
+  .fa-heart {
+    color: $love-color
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: " ";
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .footer {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    text-align: center;
+  }
+}
