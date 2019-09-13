@@ -10,6 +10,9 @@ import Layout from "components/Layout/Layout.jsx";
 import KuallisoftImage from '../assets/img/kuallisoft.png'
 import AquatlanImage from '../assets/img/aquatlan.png'
 
+// data
+import { getEvents } from '../variables/data'
+
 const customCountdown = ({ total, days, hours, minutes, seconds, milliseconds, completed }) => {
   return (
     <div className="countdown">
