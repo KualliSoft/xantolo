@@ -54,7 +54,7 @@ class Index extends React.Component {
     return (
       <Layout>
         <div className="landing">
-          <div className="banner section">
+          <div className="banner">
             <Container>
               <div className="title">
                 <h3>La fiesta de vivos y muertos...</h3>
@@ -115,7 +115,7 @@ class Index extends React.Component {
                           <CardBody>
                             <CardTitle>{place.name}</CardTitle>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <Button color="primary" size="sm" block>Ver detalle</Button>
+                            <Button color="primary" size="sm" block href={`/${place.state}/${place.slug}/`}>Ver detalle</Button>
                           </CardBody>
                         </Col>
                       </Row>

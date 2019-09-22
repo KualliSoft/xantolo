@@ -66,6 +66,9 @@ class ComponentsNavbar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/acerca-de/">Acerca de</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Container>

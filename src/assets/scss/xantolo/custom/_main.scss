@@ -2,6 +2,17 @@ body {
     color: $white;
 }
 
+a {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: 100% 0.4em;
+    background-repeat: no-repeat;
+    background-position: left 0 bottom -40%;
+}
+
+ul {
+    padding-inline-start: 15px;
+}
+
 .navbar-light {
     background-color: #FFFFFF !important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -35,7 +46,11 @@ hr {
 }
 
 .section {
-    padding: 30px 14px;
+    padding: 10px 14px;
+
+    &:first-child {
+        padding-top: 30px;
+    }
 }
 
 img {
@@ -68,3 +83,4 @@ img {
 }
 
 @import 'sections/_landing';
+@import 'sections/_about';
