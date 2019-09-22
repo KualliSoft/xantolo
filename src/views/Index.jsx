@@ -114,7 +114,7 @@ class Index extends React.Component {
                         <Col md={6}>
                           <CardBody>
                             <CardTitle>{place.name}</CardTitle>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae sunt autem ipsa quam repudiandae accusantium molestias enim aperiam atque fugiat provident omnis numquam ab, nobis expedita laborum? Deleniti, aut tenetur!</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <Button color="primary" size="sm" block>Ver detalle</Button>
                           </CardBody>
                         </Col>
