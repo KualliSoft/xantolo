@@ -27,12 +27,44 @@ main {
     width: $full-width;
 }
 
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 2px solid $primary;
+}
+
 .section {
     padding: 30px 14px;
 }
 
 img {
     width: 100%;
+}
+
+.card {
+    margin-bottom: 1rem;
+    color: $primary;
+    border: none;
+
+    .card-body {
+        padding: 1rem;
+
+        .card-title {
+            color: rgba(38, 2, 115, 0.9) !important;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+    }
+
+    * {
+        color: $primary !important;
+    }
+
+    .btn,
+    .badge {
+        color: #FFFF !important;
+    }
 }
 
 @import 'sections/_landing';

@@ -2,17 +2,37 @@
 
     .banner {
         padding: 60px 0px;
-        background: linear-gradient(45deg, #F27C38, transparent), url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Personas_con_trajes_tradicionales_y_m%C3%A0scaras_de_madera_en_el_Festival_%22Xantolo%22_2013..JPG);
+        padding-top: calc(70vh - 116px);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(/images/cover.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        height: calc(100vh - 56px);
+
+        div.title {
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            width: fit-content;
+
+            h1 {
+                font-size: 5rem;
+                font-weight: bold;
+                color: rgba(38, 2, 115, 0.9);
+                text-shadow: 2px 2px #fff;
+                width: fit-content;
+                padding: 0px 25px;
+            }
+
+            h3 {
+                color: rgba(38, 2, 115, 0.9);
+                width: fit-content;
+                padding: 0px 25px;
+                padding-top: 15px;
+                margin-bottom: 0px;
+            }
+        }
 
         p {
             margin: 0;
-        }
-
-        h1 {
-            font-size: 5rem;
-            font-weight: bold;
         }
 
         .countdown {
@@ -20,26 +40,38 @@
             grid-template-columns: repeat(4, 100px [col-start]);
             grid-column-gap: 18px;
 
-
             div {
                 text-align: center;
                 padding: 10px;
-                border: 1px solid #F24738;
-                border-bottom: 6px solid #F24738;
-                background: rgba(242, 71, 56, 0.05);
+                border: 1px solid rgba(38, 2, 115, 1);
+                border-bottom: 6px solid rgba(38, 2, 115, 1);
+                background: rgba(255, 255, 255, 0.3);
 
                 p {
                     margin: 0;
                     font-size: 14px;
+                    color: rgba(38, 2, 115, 1);
+                    font-weight: 600;
 
                     &.number {
-                        font-size: 30px;
+                        font-weight: bold;
+                        font-size: 36px;
+                        text-shadow: 2px 2px #fff;
                     }
                 }
             }
+        }
 
-            @media (max-width: 400px) {
-                grid-template-columns: repeat(4, 60px [col-start]);
+        @media (max-width: 600px) {
+
+            div.title {
+                h1 {
+                    font-size: 2.9rem;
+                }
+            }
+
+            .countdown {
+                grid-template-columns: repeat(4, 20% [col-start]);
 
                 p {
                     font-size: 10px !important;
@@ -49,7 +81,14 @@
                     }
                 }
             }
+        }
+    }
 
+    .places {
+        .card {
+            img {
+                min-height: 170px;
+            }
         }
     }
 
