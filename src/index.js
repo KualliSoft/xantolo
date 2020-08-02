@@ -13,10 +13,14 @@ import About from "./views/About";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact render={props => <Index {...props} />} />
-      <Route path="/:state/:place/" exact render={props => <Place {...props} />} />
-      <Route path="/acerca-de" exact render={props => <About {...props} />} />
-      <Route path="" component={props => <NotFound {...props} />} />
+      <Route path="/" exact render={(props) => <Index {...props} />} />
+      <Route
+        path="/:state/:place/"
+        exact
+        render={(props) => <Place {...props} />}
+      />
+      <Route path="/acerca-de" exact render={(props) => <About {...props} />} />
+      <Route path="" component={(props) => <NotFound {...props} />} />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
