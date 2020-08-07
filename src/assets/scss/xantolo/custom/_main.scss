@@ -1,86 +1,89 @@
 body {
-    color: $white;
+  color: $white;
 }
 
 a {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-    background-size: 100% 0.4em;
-    background-repeat: no-repeat;
-    background-position: left 0 bottom -40%;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+  background-size: 100% 0.4em;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom -40%;
 }
 
 ul {
-    padding-inline-start: 15px;
+  padding-inline-start: 15px;
 }
 
 .navbar-light {
-    background-color: #FFFFFF !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
-    .navbar-brand {
-        font-family: 'Pacifico', cursive;
-        color: #f24ba7;
-        font-size: 24px;
-        padding: 0;
+  .navbar-brand {
+    font-family: "Pacifico", cursive;
+    color: #f24ba7;
+    font-size: 24px;
+    padding: 0;
 
-        img {
-            width: 27px;
-            top: -4px;
-            position: relative;
-            margin-right: 5px;
-        }
+    img {
+      width: 27px;
+      top: -4px;
+      position: relative;
+      margin-right: 5px;
     }
+  }
 }
 
 main {
-    position: relative;
-    margin-top: 56px;
-    width: $full-width;
+  position: relative;
+  margin-top: 56px;
+  width: $full-width;
 }
 
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-top: 2px solid $primary;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 2px solid $primary;
 }
 
 .section {
-    padding: 10px 14px;
+  padding: 10px 14px;
 
-    &:first-child {
-        padding-top: 30px;
-    }
+  &:first-child {
+    padding-top: 30px;
+  }
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .card {
-    margin-bottom: 1rem;
-    color: $primary;
-    border: none;
+  margin-bottom: 1rem;
+  color: $primary;
+  border: none;
 
-    .card-body {
-        padding: 1rem;
+  .card-body {
+    padding: 1rem;
 
-        .card-title {
-            color: rgba(38, 2, 115, 0.9) !important;
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
+    .card-title {
+      color: rgba(38, 2, 115, 0.9) !important;
+      font-weight: bold;
+      margin-bottom: 4px;
     }
+  }
 
-    * {
-        color: $primary !important;
-    }
+  * {
+    color: $primary !important;
+  }
 
-    .btn,
-    .badge {
-        color: #FFFF !important;
-    }
+  .btn,
+  .badge {
+    color: #ffff !important;
+  }
 }
 
-@import 'sections/_landing';
-@import 'sections/_about';
+@import "sections/_landing";
+@import "sections/_about";

@@ -1,100 +1,99 @@
 .landing {
+  display: flex;
+  padding-top: 20px;
+  height: calc(100vh - 80px);
 
-    .banner {
-        padding: 60px 0px;
-        padding-top: calc(70vh - 116px);
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(/images/cover.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: calc(100vh - 56px);
-        margin-bottom: 20px;
+  .side {
+    border-radius: 10px 0px 0px 10px;
+    background: #edc157;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2)),
+      url(/images/cover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 15px;
 
-        div.title {
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.5);
-            width: fit-content;
+    .countdown {
+      background: rgba(171, 129, 23, 0.75);
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      padding: 10px 4px;
+      border-radius: 4px;
+      line-height: 24px;
 
-            h1 {
-                font-size: 5rem;
-                font-weight: bold;
-                color: rgba(38, 2, 115, 0.9);
-                text-shadow: 2px 2px #fff;
-                width: fit-content;
-                padding: 0px 25px;
-            }
-
-            h3 {
-                color: rgba(38, 2, 115, 0.9);
-                width: fit-content;
-                padding: 0px 25px;
-                padding-top: 15px;
-                margin-bottom: 0px;
-            }
+      p {
+        &.number {
+          font-size: 28px;
         }
+        margin: 0px;
+      }
+    }
 
-        p {
+    .social-networks {
+      text-align: center;
+      margin-top: 10px;
+
+      a,
+      a:hover,
+      a:visited,
+      a:active {
+        background: transparent;
+        margin-left: 10px;
+
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .content {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    max-height: calc(100vh - 100px);
+    overflow-x: scroll;
+    color: $primary;
+
+    h2 {
+      color: $black;
+    }
+
+    .relevant-date {
+      .card-body {
+        display: grid;
+        grid-template-columns: 50px auto;
+
+        .date {
+          text-align: center;
+
+          p {
             margin: 0;
+            font-size: 28px;
+            line-height: 22px;
+
+            small {
+              font-size: 14px;
+            }
+          }
         }
 
-        .countdown {
-            display: grid;
-            grid-template-columns: repeat(4, 100px [col-start]);
-            grid-column-gap: 18px;
-
-            div {
-                text-align: center;
-                padding: 10px;
-                border: 1px solid rgba(38, 2, 115, 1);
-                border-bottom: 6px solid rgba(38, 2, 115, 1);
-                background: rgba(255, 255, 255, 0.3);
-
-                p {
-                    margin: 0;
-                    font-size: 14px;
-                    color: rgba(38, 2, 115, 1);
-                    font-weight: 600;
-
-                    &.number {
-                        font-weight: bold;
-                        font-size: 36px;
-                        text-shadow: 2px 2px #fff;
-                    }
-                }
-            }
+        .detail {
+          padding-left: 1rem;
         }
+      }
+    }
+  }
 
-        @media (max-width: 600px) {
-
-            div.title {
-                h1 {
-                    font-size: 2.9rem;
-                }
-            }
-
-            .countdown {
-                grid-template-columns: repeat(4, 20% [col-start]);
-
-                p {
-                    font-size: 10px !important;
-
-                    &.number {
-                        font-size: 20px !important;
-                    }
-                }
-            }
-        }
+  @media (max-width: 575.9px) {
+    padding-top: 0px;
+    .side {
+      border-radius: 0px;
     }
 
-    .places {
-        .card {
-            img {
-                min-height: 170px;
-            }
-        }
+    .content {
+      border-radius: 0px;
+      max-height: max-content;
     }
-
-    .sponsors {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 35px 20px;
-    }
+  }
 }
